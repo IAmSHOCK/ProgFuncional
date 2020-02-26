@@ -1,4 +1,13 @@
 
+inc x = x + 1
+
+quadrado x = x*x
+
+dobro x = x + x
+
+media x y = (x + y)/2
+
+
 -- Ex 2
 triangulo :: Float -> Float -> Float -> Bool
 triangulo a b c | a < b + c = True
