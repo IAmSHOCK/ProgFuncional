@@ -29,6 +29,9 @@ delete2 _ [] = []
 delete2 n (x:xs)  | n==x = xs
                   | otherwise = x : delete2 n xs
 
+--ex 43 c)
+
+
 
 --ex 44 b)
 --msort :: Ord a => [a] -> [a]
