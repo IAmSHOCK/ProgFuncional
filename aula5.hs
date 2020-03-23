@@ -11,7 +11,7 @@ sumFun f n = (f n) + sumFun f (n-1)
 
 --ex 42 a)
 insert2 :: Ord a => a -> [a] -> [a]
-insert2 n l = [p | p <- l, p < n] ++ [n] ++ [q | q <- l, q > n]
+insert2 n l = [p | p <- l, p <= n] ++ [n] ++ [q | q <- l, q > n]
 
 --ex 42 b)
 isort :: Ord a => [a] -> [a]
@@ -34,6 +34,10 @@ ssort :: Ord a => [a] -> [a]
 ssort [] = []
 ssort (x:xs) = m : ssort (delete2 m (x:xs))
                where m = minimum2 (x:xs) 
+
+--ex 44 a)
+merge :: Ord a => [a] -> [a] -> [a]
+merge l m = [ | ]
 
 --ex 44 b)
 --msort :: Ord a => [a] -> [a]
