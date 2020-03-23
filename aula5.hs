@@ -30,8 +30,10 @@ delete2 n (x:xs)  | n==x = xs
                   | otherwise = x : delete2 n xs
 
 --ex 43 c)
-
-
+ssort :: Ord a => [a] -> [a]
+ssort [] = []
+ssort (x:xs) = m : ssort (delete2 m (x:xs))
+               where m = minimum2 (x:xs) 
 
 --ex 44 b)
 --msort :: Ord a => [a] -> [a]
