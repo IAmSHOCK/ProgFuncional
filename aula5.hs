@@ -32,8 +32,8 @@ delete2 n (x:xs)  | n==x = xs
 --ex 43 c)
 ssort :: Ord a => [a] -> [a]
 ssort [] = []
-ssort (x:xs) = m : ssort (delete2 m (x:xs))
-               where m = minimum2 (x:xs) 
+ssort l = m : ssort (delete2 m l)
+               where m = minimum2 l 
 
 --ex 44 a)
 merge :: Ord a => [a] -> [a] -> [a]
