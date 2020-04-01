@@ -28,12 +28,12 @@ concat2 l = foldr (++) [] l
 
 -- ex 48 c)
 reverse2 :: [a] -> [a]
-reverse2 l = foldr (\v l = l ++ [v]) 
+reverse2 l = foldr (\v l -> l ++ [v]) 
 
 --ex 48 e)
 elem2 :: Eq a => a -> [a] -> Bool
-elem2 n l = any (\x -> x==v) l
+elem2 n l = any (\x -> x==n) l
 
 --ex 49
-dec2int :: [Int] → Int
+--dec2int :: [Int] → Int
 dec2int l = foldl (\x y -> x*10+y) 0 l
