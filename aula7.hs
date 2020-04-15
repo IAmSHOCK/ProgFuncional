@@ -57,3 +57,8 @@ multfoldi i j = foldi (+i) 0 j
 expfoldi i j  = foldi (*i) 1 j
 
 --ex 54 c)
+-- factfoldi :: Integer -> Integer
+{-factfoldi 1 = 1
+factfoldi i = (multfoldi 1 i) * factfoldi (pred i)-}
+
+factfoldi i = foldi (*) 
