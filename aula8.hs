@@ -42,3 +42,10 @@ shift (h:t) = t ++ [h]
 
 rotate :: [a] -> [[a]] 
 rotate l = take (length l) (iterate shift l)
+
+--ex 62
+lowerCases :: [Char]
+lowerCases = "abcdefghijkmlnopqrstuvwxyz"
+
+strings :: [Char]
+strings = 
