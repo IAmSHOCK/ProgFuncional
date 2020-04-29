@@ -6,7 +6,7 @@ factorial :: [Int]
 factorial = 1 : [a * b | (a, b) <- zip factorial [1..]]
 
 fibonacci :: [Int]
-fibonacci = 0 : 1 : [x + y | (x,y) <- zip fibonacci (tail fibonacci)]
+fibonacci = 1 : [x + y | (x,y) <- zip fibonacci (tail fibonacci)]
 --fibonacci = 0 : 1 : zipWith (+) fibonacci (tail fibonacci)
 
 --ex 58
